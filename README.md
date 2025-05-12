@@ -24,9 +24,11 @@ This Honeypot SIEM project was designed to grow my understanding of attackers pa
 
 I began this project by setting up a basic resource group in azure to host all the tools necessary to deploy this SIEM. Once the foundation was setup, I deployed a low resource virtual machine in the resource group and began running it after receiving a set IP address from the virtual network. This VM will act as the honeypot to attract attackers all around the world. 
 
-<img src="/mnt/data/RG-SOC-Lab0.PNG" alt="RG-SOC-Lab Overview" style="max-width: 100%; height: auto;">
+<img src="images/RG-SOC-Lab1.PNG" alt="Resource Group Overview">
 (Finished azure foundation hosted in the resource group)
+<p style="margin-top: 30px;"></p>
+
 
 Now that the basics are setup, it is necessary to begin opening up defenses to allow attackers to start attempting to breach the defenses of this machine. To accomplish this, I set the security group connected to the virtual machine to allow all inbound connections on all ports. The next step is to log back onto the virtual machine and disable all firewalls locally. Both of these actions will make the machine extremely attractive to adversaries.
 
-
+<img src="images/Sec rules.PNG" alt="Resource Group Overview">
